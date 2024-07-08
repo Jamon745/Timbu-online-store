@@ -3,7 +3,7 @@ import Vector2 from "../../assets/Images/fa-solid_shipping-fast.png";
 import Vector3 from "../../assets/Images/subway_tick.png";
 import Vector4 from "../../assets/Images/flowbite_wallet-solid.png";
 import { ProductData } from "./ProductData";
-import { FaBagShopping } from "react-icons/fa6";
+import { FaBagShopping, FaHeart } from "react-icons/fa6";
 
 const Products = () => {
   return (
@@ -70,6 +70,7 @@ const Products = () => {
             {ProductData.map((data) => (
                   <div key={data.id} className="mx-auto mt-10">
                         <img src={data.img} width="300px" height="300px" alt="" />
+                        < FaHeart className="text-primary text-xl hover:translate-y-1 bg-white rounded-full p-1 absolute -mt-60 ml-60"/>
                         <p className="flex items-center justify-between mt-3">{data.description} <FaBagShopping className="text-primary/50 bg-white rounded-full p-1 text-xl"/></p>
                         <h3 className="font-semibold">{data.price}</h3>
                   </div>

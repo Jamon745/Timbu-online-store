@@ -36,11 +36,11 @@ const Banner = () => {
             src={BannerImg2}
             width="300px"
             height="388px"
-            className="mt-28 mb-8"
+            className="mt-20 mb-8"
             alt=""
           />
           <img src={BannerImg1} width="300px"
-            height="388px" className="mt-8 mb-16" alt="" />
+            height="388px" className="mt-8 mb-20" alt="" />
         </div>
       </header>
     </div>
