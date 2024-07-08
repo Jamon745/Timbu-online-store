@@ -2,7 +2,7 @@ import BannerImg1 from "../assets/Images/Rectangle 1.png";
 import BannerImg2 from "../assets/Images/Rectangle 5.png";
 const Banner = () => {
   return (
-    <div className="h-[70vh] w-full bg-secondary">
+    <div className="h-[75vh] w-full bg-secondary">
       <header className="container mx-auto flex">
             div
         <div className="  max-w-[40vw]">
