@@ -5,6 +5,8 @@ import 'aos/dist/aos.css'
 import Banner from "./Components/Banner"
 import Navbar from "./Components/Navbar"
 import Products from "./Components/Pages/Products"
+import Review from "./Components/Review"
+import Footer from "./Components/Footer"
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
         <Navbar />
         <Banner/>
         <Products/>
+        <Review/>
+        <Footer/>
       </div>
     </>
   )
