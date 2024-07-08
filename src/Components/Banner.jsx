@@ -13,7 +13,7 @@ const Banner = () => {
             Embrace your unique style with our exquisite jewelry, designed to
             illuminate your beauty and capture the essence of sophistication.
           </p>
-          <button className="bg-primary mb-8 px-4 py-2 text-white">
+          <button className="bg-primary mb-8 px-4 py-2 text-white hover:bg-primary/55">
             Discover Menu
           </button>
 
