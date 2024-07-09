@@ -1,8 +1,15 @@
 import { FaArrowRightLong, FaStar } from "react-icons/fa6";
 import CartProduct1 from "../../assets/Images/Rectangle 6.png";
 import OtherProducts from "./OtherProducts";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate();
+
+  const handleCheckout = (e) =>{
+    e.preventDefault();
+    navigate('/checkout')
+  }
   return (
     <div>
       <div className="flex justify-between h-[90vh] w-[80vw] mx-20 my-10">
@@ -219,7 +226,7 @@ const Cart = () => {
             </div>
           </div>
           <div className="flex items-center gap-4 my-4">
-            <button className="bg-primary px-12 py-1 text-white">
+            <button onClick={handleCheckout} className="bg-primary px-12 py-1 hover:bg-primary/75 text-white">
               Checkout
             </button>
             <p className="flex items-center gap-2 mx-20">

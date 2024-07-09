@@ -1,6 +1,14 @@
 import BannerImg1 from "../assets/Images/Rectangle 1.png";
 import BannerImg2 from "../assets/Images/Rectangle 5.png";
+import { useNavigate } from "react-router-dom";
+
 const Banner = () => {
+  const navigate = useNavigate();
+
+  const goToProducts = (e) => {
+    e.preventDefault();
+    navigate('/otherProducts')
+  }
   return (
     <div className="h-[75vh] w-full bg-secondary">
       <header className="container mx-auto flex">
@@ -13,7 +21,7 @@ const Banner = () => {
             Embrace your unique style with our exquisite jewelry, designed to
             illuminate your beauty and capture the essence of sophistication.
           </p>
-          <button className="bg-primary mb-8 px-4 py-2 text-white hover:bg-primary/55">
+          <button onClick={goToProducts} className="bg-primary mb-8 px-4 py-2 text-white hover:bg-primary/55">
             Discover Menu
           </button>
 

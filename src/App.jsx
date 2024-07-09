@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Cart from "./Components/Pages/Cart";
 import OtherProducts from "./Components/Pages/OtherProducts";
+import Checkout from "./Components/Pages/Checkout";
 
 function App() {
   useEffect(() => {
@@ -27,9 +28,11 @@ function App() {
             <Link><Navbar /></Link> 
           <Routes>
             <Route path="/" element={<Products />}/>
+            <Route path="/products" element={<Products />}/>
             <Route path="/review" element={<Review />}/>
             <Route path="/cart" element={<Cart />} />
             <Route path="/otherProducts" element={<OtherProducts />} />
+            <Route path="/checkout" element={<Checkout/>}/>
           </Routes>
             <Footer />
         </Router>
