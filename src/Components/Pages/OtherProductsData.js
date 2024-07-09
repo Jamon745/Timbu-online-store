@@ -13,16 +13,16 @@ export const OtherProductsData = [
       {
           id: 9,
           img: img9,
-          title: "Necklace",
-          description: "Neckpiece",
+          title: "Leg Chain",
+          description: "Leg Chain",
           label: labelAll,
           price: "$45"
       },
       {
           id: 8,
           img: img8,
-          title: "Waist Bead",
-          description: "Waist Bead",
+          title: "Leg Chain",
+          description: "Leg Chain",
           label: labelAll,
           price: "$45"
       },

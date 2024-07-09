@@ -5,9 +5,9 @@ import OtherProducts from "./OtherProducts";
 const Cart = () => {
   return (
     <div>
-      <div className="flex justify-between h-[90vh] w-[80vw] mx-auto my-10">
+      <div className="flex justify-between h-[90vh] w-[80vw] mx-20 my-10">
         {/* cart items section */}
-        <div className="border-gray-500 border-r-2 pr-2 w-[75vw]">
+        <div className="border-gray-500 border-r-2 pr-2 w-[80vw]">
           <div className="flex gap-20 max-w-[70vw] border-b-2 border-gray-500">
             <h3 className="font-semibold">Product Name</h3>
             <h3 className="font-semibold ml-10">Description</h3>
@@ -290,7 +290,7 @@ const Cart = () => {
         </div>
         
       </div>
-      <OtherProducts className='mt-20'/>
+      <OtherProducts className='mt-28'/>
     </div>
   );
 };
