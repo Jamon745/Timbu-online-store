@@ -55,7 +55,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-12">
+              <button className="border border-gray-400 px-4 ml-10">
                 - 2 +
               </button>
 
@@ -106,7 +106,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-10">
+              <button className="border border-gray-400 px-4 ml-8">
                 - 2 +
               </button>
 
@@ -157,7 +157,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-10">
+              <button className="border border-gray-400 px-4 ml-8">
                 - 2 +
               </button>
 
@@ -208,7 +208,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-10">
+              <button className="border border-gray-400 px-4 ml-8">
                 - 2 +
               </button>
 

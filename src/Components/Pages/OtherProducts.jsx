@@ -4,7 +4,7 @@ import { OtherProductsData } from "./OtherProductsData";
 const OtherProducts = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold mx-28 my-20 ">Other Products</h1>
+      <h1 className="text-3xl font-bold mx-28 mt-20 ">Other Products</h1>
       <div className="grid grid-cols-3">
         {OtherProductsData.map((data) => (
           <div
