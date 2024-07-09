@@ -1,7 +1,24 @@
-import {  FaSearch, FaShoppingBag } from "react-icons/fa";
+import {  FaSearch} from "react-icons/fa";
 import Logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
+import { FaCartPlus } from "react-icons/fa6";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const goToHome = (e) => {
+    e.preventDefault();
+    navigate("/")
+  }
+
+  const goToProducts = (e) => {
+    e.preventDefault();
+    navigate("/products")
+  }
+  const goToCart = (e) => {
+    e.preventDefault();
+    navigate("/cart")
+  }
   return (
     <div>
       <nav className="container mx-auto flex items-center justify-between">
@@ -12,13 +29,13 @@ const Navbar = () => {
 
         {/* navbar items */}
         <ul className="flex items-center justify-around gap-6 cursor-pointer">
-          <li className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
+          <li onClick={goToHome} className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
             Home
           </li>
           <li className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
             About
           </li>
-          <li className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
+          <li onClick={goToProducts} className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
             Categories
           </li>
           <li className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
@@ -28,7 +45,7 @@ const Navbar = () => {
         {/* navbar icons */}
         <div className="flex items-center gap-4">
           <FaSearch />
-          <FaShoppingBag />
+          <FaCartPlus onClick={goToCart} className="text-primary"/>
         </div>
       </nav>
       

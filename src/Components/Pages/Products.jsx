@@ -5,10 +5,20 @@ import Vector4 from "../../assets/Images/flowbite_wallet-solid.png";
 import { ProductData } from "./ProductData";
 import { FaArrowRightLong, FaCartPlus, FaHeart } from "react-icons/fa6";
 import GuidianImg from "../../assets/Images/Shopping girl using shopping card.png";
+import { useNavigate } from "react-router-dom";
+import Banner from "../Banner";
 
 const Products = () => {
+  const navigate = useNavigate();
+
+  const openCart = (e) =>{
+    e.preventDefault()
+    navigate('/cart')
+  }
   return (
     <div className="bg-[#ece6d3] h-auto pb-10">
+           <Banner />
+
       {/* section for displaying service benefits to our Customers */}
 
       <div className="container mx-auto bg-[#d9d9d9] h-[250px] rounded-2xl flex items-center justify-center text-center mt-10">
@@ -80,7 +90,7 @@ const Products = () => {
               <FaHeart className="text-primary text-xl hover:translate-y-1 bg-white rounded-full p-1 absolute -mt-64 ml-60" />
               <p className="flex items-center justify-between mt-2">
                 {data.description}{" "}
-                <FaCartPlus className="text-primary/75 hover:border-2 border-secondary cursor-pointer bg-white rounded-full p-1 text-3xl" />
+                <FaCartPlus onClick={openCart} className="text-primary/75 hover:border-2 border-secondary cursor-pointer bg-white rounded-full p-1 text-3xl" />
               </p>
               <h3 className="font-semibold hover:border-2 w-8 border-b-secondary">{data.price}</h3>
             </div>
