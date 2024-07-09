@@ -147,7 +147,7 @@ const Products = () => {
                 You will receive an order confirmation email with tracking
                 information.
               </p>
-              <button onClick={handleOrder} className="bg-primary text-white hover:bg-primary/75 py-1 px-2 ml-40 mt-10">Oder Now</button>
+              <button onClick={handleOrder} className="bg-primary text-white hover:bg-primary/75 py-1 px-2 ml-40 mt-10">Order Now</button>
             </div>
 
             {/* order guidian images */}

@@ -60,7 +60,7 @@ const Cart = () => {
               </button>
 
               {/* Price section */}
-              <h3 className="ml-16 font-semibold flex items-center gap-2">
+              <h3 className="ml-10 font-semibold flex items-center gap-2">
                 $30.00 <span className="text-lg">X</span>
               </h3>
             </div>
@@ -111,7 +111,7 @@ const Cart = () => {
               </button>
 
               {/* Price section */}
-              <h3 className="ml-16 font-semibold flex items-center gap-2">
+              <h3 className="ml-10 font-semibold flex items-center gap-2">
                 $30.00 <span className="text-lg">X</span>
               </h3>
             </div>
@@ -162,7 +162,7 @@ const Cart = () => {
               </button>
 
               {/* Price section */}
-              <h3 className="ml-16 font-semibold flex items-center gap-2">
+              <h3 className="ml-10 font-semibold flex items-center gap-2">
                 $30.00 <span className="text-lg">X</span>
               </h3>
             </div>
@@ -213,7 +213,7 @@ const Cart = () => {
               </button>
 
               {/* Price section */}
-              <h3 className="ml-16 font-semibold flex items-center gap-2">
+              <h3 className="ml-10 font-semibold flex items-center gap-2">
                 $30.00 <span className="text-lg">X</span>
               </h3>
             </div>
