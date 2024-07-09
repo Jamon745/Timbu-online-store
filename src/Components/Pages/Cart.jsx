@@ -106,7 +106,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-2 ml-8">
+              <button className="border border-gray-400 px-1 ml-8">
                 - 2 +
               </button>
 
