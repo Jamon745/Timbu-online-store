@@ -55,7 +55,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-10">
+              <button className="border border-gray-400 px-2 ml-10">
                 - 2 +
               </button>
 
@@ -106,7 +106,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-8">
+              <button className="border border-gray-400 px-2 ml-8">
                 - 2 +
               </button>
 
@@ -157,7 +157,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-8">
+              <button className="border border-gray-400 px-2 ml-8">
                 - 2 +
               </button>
 
@@ -208,7 +208,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity section */}
-              <button className="border border-gray-400 px-4 ml-8">
+              <button className="border border-gray-400 px-2 ml-8">
                 - 2 +
               </button>
 
@@ -222,7 +222,7 @@ const Cart = () => {
             <button className="bg-primary px-12 py-1 text-white">
               Checkout
             </button>
-            <p className="flex items-center gap-2 mx-36">
+            <p className="flex items-center gap-2 mx-20">
               Continue Shopping <FaArrowRightLong />
             </p>
             <h2 className="ml-10 font-semibold text-lg">
