@@ -10,7 +10,7 @@ const Checkout = () => {
             navigate('/cart')
       }
   return (
-    <div className="h-[100vh] w-full mx-16 my-12">
+    <div className="h-[100vh] w-full mx-auto container my-16">
       <div onClick={goBackToCart} className="flex items-center gap-2 -mt-10 cursor-pointer">
         <FaArrowLeftLong />
         <h1 className="font-bold text-2xl">CHECKOUT</h1>
