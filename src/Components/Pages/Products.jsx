@@ -25,8 +25,8 @@ const Products = () => {
 
       {/* section for displaying service benefits to our Customers */}
 
-      <div className="container mx-auto bg-[#d9d9d9] h-[250px] rounded-2xl flex items-center justify-center text-center mt-10">
-        <div data-aos="zoom-in"  className="flex flex-col p-1 border-r-2 border-gray-500 w-[300px]">
+      <div className="container mx-auto bg-[#d9d9d9] h-[270px] rounded-2xl grid grid-cols-2 md:flex md:flex-row items-center justify-center text-center mt-[950px] md:mt-10 lg:mt-10">
+        <div data-aos="zoom-in"  className="flex flex-col md:p-1 border-r-2 border-gray-500 w-[200px]">
           <img
             className="bg-white rounded-full p-1 self-center"
             src={Vector1}
@@ -36,7 +36,7 @@ const Products = () => {
           <p>Meticulous craftsmanship, true authentic beauty.</p>
         </div>
 
-        <div data-aos="zoom-in"  className="flex flex-col p-1 border-r-2 border-gray-500  w-[300px]">
+        <div data-aos="zoom-in"  className="flex flex-col md:p-1 md:border-r-2 border-gray-500 px-0 w-[200px]">
           <img
             className="bg-white rounded-full p-1 self-center"
             src={Vector2}
@@ -46,7 +46,7 @@ const Products = () => {
           <p>Enjoy fast, reliable worldwide shipping.</p>
         </div>
 
-        <div data-aos="zoom-in"  className="flex flex-col border-r-2 border-gray-500  w-[300px]">
+        <div data-aos="zoom-in"  className="flex flex-col border-r-2 border-gray-500  w-[200px]">
           <img
             className="bg-white rounded-full self-center"
             src={Vector3}
@@ -56,7 +56,7 @@ const Products = () => {
           <p>Experience secure and swift payments.</p>
         </div>
 
-        <div data-aos="zoom-in"  className="flex flex-col px-6 w-[300px]">
+        <div data-aos="zoom-in"  className="flex flex-col px-5 w-[200px]">
           <img
             className="bg-white rounded-full p-1 self-center"
             src={Vector4}
@@ -70,8 +70,8 @@ const Products = () => {
       {/* Products */}
       <div className="pb-10">
         <h1 className="text-center font-bold text-2xl mt-12 ">Our Products</h1>
-        <ul className="flex items-center gap-6 justify-evenly mt-10 h-10">
-          <li className="bg-primary w-20 rounded-lg px-2 py-2 text-center hover:border-2 hover:border-secondary">
+        <ul className="flex flex-wrap items-center gap-2 mt-4 md:mt-10 lg:mt-10 lg:gap-6 container md:container lg:container mx-auto mb-4 h-10">
+          <li className="bg-primary w-10 md:w-20 rounded-lg px-2 py-2 text-center hover:border-2 hover:border-secondary">
             All
           </li>
           <li className="hover:border-b-2 hover:border-secondary">Necklace</li>
@@ -87,11 +87,11 @@ const Products = () => {
             Nose Rings
           </li>
         </ul>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {ProductData.map((data) => (
-            <div data-aos="zoom-in"  key={data.id} className="mx-auto pb-10 mt-10">
-              <img src={data.img} width="300px" height="300px" className="hover:border-4 border-secondary rounded-2xl cursor-pointer" alt="" />
-              <FaHeart className="text-primary text-xl hover:translate-y-1 bg-white rounded-full p-1 absolute -mt-64 ml-60" />
+            <div data-aos="zoom-in"  key={data.id} className="mx-auto pb-10 mt-6">
+              <img src={data.img} width={"400px"} height={"400px"} className="hover:border-4 w-[180px] h-[180px] md:w-[300px] md:h-[300px} border-secondary rounded-2xl cursor-pointer" alt="" />
+              <FaHeart className="text-primary text-xl hover:translate-y-1 bg-white rounded-full p-1 absolute -mt-36 ml-32" />
               <p className="flex items-center justify-between mt-2">
                 {data.description}{" "}
                 <FaCartPlus onClick={openCart} className="text-primary/75 hover:border-2 border-secondary cursor-pointer bg-white rounded-full p-1 text-3xl" />
@@ -102,7 +102,7 @@ const Products = () => {
         </div>
         {/* How to order section */}
         <div className=" bg-white py-10">
-          <div className="flex container mx-auto">
+          <div className="flex flex-col order-1 container mx-auto">
             {/* Steps to Order */}
             <div  >
               <h1 className="text-center text-4xl uppercase font-semibold">

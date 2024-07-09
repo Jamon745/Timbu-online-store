@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         {/* navbar toggle button for small screens */}
-        <div onClick={toggleNavbar} className="md:hidden cursor-pointer text-2xl">
+        <div onClick={toggleNavbar} className="md:hidden lg:hidden cursor-pointer text-2xl">
           {isOpen ? '' : <FaBars />}
         </div>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
             isOpen ? "translate-x-0" : "translate-x-full"
           } md:translate-x-0 z-50`}
         >
-          <FaTimes onClick={toggleNavbar} className="absolute top-[14%] right-[34%] text-xl"/>
+          <FaTimes onClick={toggleNavbar} className="absolute top-[14%] right-[34%] md:hidden text-xl"/>
           <li onClick={goToHome} className="cursor-pointer text-xl hover:text-primary md:hover:border-b-2 md:hover:border-secondary" >
             Home
           </li>

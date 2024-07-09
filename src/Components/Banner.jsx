@@ -11,9 +11,9 @@ const Banner = () => {
   }
   return (
     <div className="h-[75vh] w-full bg-secondary ">
-      <header className="container mx-auto flex">
+      <header className="container mx-auto flex flex-col md:flex-row">
             
-        <div className="  max-w-[40vw]">
+        <div className="max-w-[100vw] px-3 md:px-0 md:max-w-[40vw]">
           <h2 className="text-white font-semibold text-3xl pt-12 pb-2">
             Discover Timeless Elegance and Craftsmanship in Every Piece
           </h2>
@@ -25,7 +25,7 @@ const Banner = () => {
             Discover Menu
           </button>
 
-          <div className="bg-gray-500 w-[399px] h-[105px] rounded-lg flex px-6 py-2">
+          <div className="bg-gray-500 w-[350px] md:w-[399px] h-[105px] rounded-lg flex px-6 py-2">
             <div className="bg-white rounded-xl px-2 m-2 text-center py-2 text-primary text-xl font-semibold hover:translate-x-1">
               15 <span className="text-gray-400 text-sm">Countries</span>
             </div>
@@ -39,7 +39,7 @@ const Banner = () => {
         </div>
 
         {/* container for images */}
-        <div className="flex gap-8 ">
+        <div className="flex flex-col md:flex-row lg:flex-row mx-auto gap-8 ">
           <img
             src={BannerImg2}
             width="300px"
