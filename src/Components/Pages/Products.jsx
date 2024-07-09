@@ -15,6 +15,10 @@ const Products = () => {
     e.preventDefault()
     navigate('/cart')
   }
+  const handleOrder = (e) =>{
+    e.preventDefault()
+    navigate('/otherProducts')
+  }
   return (
     <div className="bg-[#ece6d3] h-auto pb-10">
            <Banner />
@@ -143,7 +147,7 @@ const Products = () => {
                 You will receive an order confirmation email with tracking
                 information.
               </p>
-              <button className="bg-primary text-white hover:bg-primary/75 py-1 px-2 ml-40 mt-10">Oder Now</button>
+              <button onClick={handleOrder} className="bg-primary text-white hover:bg-primary/75 py-1 px-2 ml-40 mt-10">Oder Now</button>
             </div>
 
             {/* order guidian images */}

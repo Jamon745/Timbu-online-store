@@ -8,6 +8,7 @@ import Review from "./Components/Review";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Cart from "./Components/Pages/Cart";
+import OtherProducts from "./Components/Pages/OtherProducts";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<Products />}/>
             <Route path="/review" element={<Review />}/>
             <Route path="/cart" element={<Cart />} />
+            <Route path="/otherProducts" element={<OtherProducts />} />
           </Routes>
             <Footer />
         </Router>

@@ -10,10 +10,14 @@ const Navbar = () => {
     e.preventDefault();
     navigate("/")
   }
+  const goToAbout = (e) => {
+    e.preventDefault();
+    navigate("/banner")
+  }
 
   const goToProducts = (e) => {
     e.preventDefault();
-    navigate("/products")
+    navigate("/otherProducts")
   }
   const goToCart = (e) => {
     e.preventDefault();
@@ -32,13 +36,13 @@ const Navbar = () => {
           <li onClick={goToHome} className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
             Home
           </li>
-          <li className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
+          <li onClick={goToAbout} className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
             About
           </li>
           <li onClick={goToProducts} className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
             Categories
           </li>
-          <li className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
+          <li onClick={goToAbout} className="cursor-pointer text-xl hover:border-b-2 hover:border-secondary hover:text-primary">
             Contact
           </li>
         </ul>
