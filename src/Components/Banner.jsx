@@ -10,9 +10,9 @@ const Banner = () => {
     navigate('/otherProducts')
   }
   return (
-    <div className="h-[75vh] w-full bg-secondary">
+    <div className="h-[75vh] w-full bg-secondary ">
       <header className="container mx-auto flex">
-            div
+            
         <div className="  max-w-[40vw]">
           <h2 className="text-white font-semibold text-3xl pt-12 pb-2">
             Discover Timeless Elegance and Craftsmanship in Every Piece
