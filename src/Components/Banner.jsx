@@ -10,7 +10,7 @@ const Banner = () => {
     navigate('/otherProducts')
   }
   return (
-    <div className="h-[75vh] w-full bg-secondary ">
+    <div className="h-[75vh] md:h-[50vh] lg:h-[60vh] w-full bg-secondary ">
       <header className="container mx-auto flex flex-col md:flex-row">
             
         <div className="max-w-[100vw] px-3 md:px-0 md:max-w-[40vw]">
@@ -42,13 +42,11 @@ const Banner = () => {
         <div className="flex flex-col md:flex-row lg:flex-row mx-auto gap-8 ">
           <img
             src={BannerImg2}
-            width="300px"
-            height="388px"
-            className="mt-20 mb-8"
+            className="mt-20 mb-8 w-[200px] h-[288px] lg:w-[300px] lg:h-[388px]"
             alt=""
           />
-          <img src={BannerImg1} width="300px"
-            height="388px" className="mt-8 mb-20" alt="" />
+          <img src={BannerImg1} 
+            className="mt-8 mb-20  w-[200px] h-[288px] lg:w-[300px] lg:h-[388px]" alt="" />
         </div>
       </header>
     </div>

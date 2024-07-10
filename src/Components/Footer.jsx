@@ -2,20 +2,20 @@ import { FaFacebook, FaInstagram, FaTiktok, FaX } from 'react-icons/fa6'
 import Logo from '../assets/logo.png'
 const Footer = () => {
   return (
-    <div className="w-full h-[460px]  bg-secondary">
-      <div data-aos="zoom-in" className='container flex justify-around'>
+    <div className="w-full h-auto  bg-secondary">
+      <div data-aos="zoom-in" className='lg:container flex justify-around'>
             <div className="">
-                  <img src={Logo} className='w-[287.35px] h-[256px] mt-[83px] ml-[28px]' alt="" />
+                  <img src={Logo} className='w-[180px] h-[180px] lg:w-[287.35px] lg:h-[256px] mt-[83px] ml-[28px]' alt="" />
             </div>
-            <div className='flex gap-10 mt-[83px] text-white border-b-2 border-white' >
+            <div className='grid grid-cols-2 lg:flex lg:flex-row gap-4 lg:gap-10 lg:mt-[83px] text-white border-b-2 border-white' >
 
                   {/* useful links */}
                   <div className='flex flex-col'>
                         <h1>INFORMATION</h1>
-                        <a className='hover:border-b-2 border-blue-800 mt-5' href="#">About Us</a>
-                        <a className='hover:border-b-2 border-blue-800 mt-5' href="#">Products</a>
-                        <a className='hover:border-b-2 border-blue-800 mt-5' href="#">Categories</a>
-                        <a className='hover:border-b-2 border-blue-800 mt-5' href="#">Delivery</a>
+                        <a className='hover:border-b-2 border-blue-800 mt-2 lg:mt-5' href="#">About Us</a>
+                        <a className='hover:border-b-2 border-blue-800 mt-2 lg:mt-5' href="#">Products</a>
+                        <a className='hover:border-b-2 border-blue-800 mt-2 lg:mt-5' href="#">Categories</a>
+                        <a className='hover:border-b-2 border-blue-800 mt-2 lg:mt-5' href="#">Delivery</a>
                   </div>
                   <div className='flex flex-col w-60'>
                         <h1>ADDRESS</h1>

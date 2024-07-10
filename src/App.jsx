@@ -10,8 +10,15 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Cart from "./Components/Pages/Cart";
 import OtherProducts from "./Components/Pages/OtherProducts";
 import Checkout from "./Components/Pages/Checkout";
+// import axios from "axios";
+// import { useState } from "react";
+
 
 function App() {
+  
+
+
+
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -21,6 +28,10 @@ function App() {
     });
     AOS.refresh();
   }, []);
+
+  
+
+
   return (
     <>
       <div className="bg-[#ece6d3]">
@@ -34,6 +45,7 @@ function App() {
             <Route path="/otherProducts" element={<OtherProducts />} />
             <Route path="/checkout" element={<Checkout/>}/>
           </Routes>
+          <Review />
             <Footer />
         </Router>
       </div>
